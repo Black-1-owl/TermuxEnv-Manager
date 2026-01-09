@@ -30,7 +30,7 @@ Open Termux and run:
 
 ```bash
 # Download the script
-curl -L -o termux-manager.sh [https://raw.githubusercontent.com/Black-1-owl/TermuxEnv-Manager/main/termux-manager.sh](https://raw.githubusercontent.com/Black-1-owl/TermuxEnv-Manager/main/termux-manager.sh)
+curl -L -o TermuxEnvManager.bash https://raw.githubusercontent.com/Black-1-owl/TermuxEnv-Manager/main/TermuxEnvManager.bash
 
 # Make it executable
 chmod +x termux-manager.sh
