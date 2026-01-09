@@ -448,7 +448,7 @@ read_backup_metadata() {
     fi
 }
 
-# List available backups with metadata - I know people gonna say you use Ai and some shi but I did this by myself plus I used Ai in some point when I felt lost
+# List available backups with metadata - What you doing here 👀 
 list_backups() {
     shopt -s nullglob
     
