@@ -25,7 +25,7 @@ CYAN='\033[1;36m'
 WHITE='\033[1;37m'
 NC='\033[0m' # No Color
 
-# Backup configuration - FIXED: Correct Android path
+# Backup configuration - Ahhhhhhh 🤧
 BACKUP_DIR="$HOME/storage/shared/Download/TermuxBackups"
 TERMUX_PATH="$HOME/../files"
 METADATA_FILE=".backup_meta.info"
@@ -37,7 +37,7 @@ TYPE_HOME="HOME_ONLY"
 TYPE_QUICK="QUICK"
 TYPE_CUSTOM="CUSTOM"
 
-# Display header with branding
+# Display header with branding - I sucks with ASCII so get used to this 🥲
 show_header() {
     clear
     echo -e "${BLUE}╔══════════════════════════════════════════════╗${NC}"
@@ -55,7 +55,7 @@ show_header() {
     echo ""
 }
 
-# Ensure storage permission
+# storage permission
 setup_storage() {
     if [ ! -d "$HOME/storage" ]; then
         echo -e "${YELLOW}Granting storage permission...${NC}"
@@ -143,7 +143,6 @@ verify_backup() {
 
 # Rotate old backups
 rotate_backups() {
-    # FIXED: Add nullglob to handle case when no backups exist
     shopt -s nullglob
     
     local max_backups=15
@@ -449,9 +448,8 @@ read_backup_metadata() {
     fi
 }
 
-# List available backups with metadata - FIXED: Added nullglob
+# List available backups with metadata - I know people gonna say you use Ai and some shi but I did this by myself plus I used Ai in some point when I felt lost
 list_backups() {
-    # FIXED: Prevent glob expansion issues when no files exist
     shopt -s nullglob
     
     show_header
@@ -537,7 +535,6 @@ restore_backup() {
     echo -e "${YELLOW}Select backup to restore (enter number):${NC}"
     read -p "Choice: " choice
     
-    # FIXED: Use nullglob for safer iteration
     shopt -s nullglob
     
     count=1
@@ -1326,7 +1323,7 @@ export_backup() {
         echo -e "${GREEN}✓ Backup exported successfully${NC}"
         echo -e "${BLUE}Location: $dest_path/$BACKUP_NAME${NC}"
         
-        # Also copy package list if it exists
+        # copy package list if it exists - bro what I'm doing 😮‍💨
         backup_ts=$(echo "$BACKUP_NAME" | grep -oE '[0-9]{8}_[0-9]{6}')
         pkg_list="$BACKUP_DIR/installed_packages_${backup_ts}.txt"
         
