@@ -33,7 +33,7 @@ Open Termux and run:
 curl -L -o TermuxEnvManager.bash https://raw.githubusercontent.com/Black-1-owl/TermuxEnv-Manager/main/TermuxEnvManager.bash
 
 # Make it executable
-chmod +x termux-manager.sh
+chmod +x TermuxEnvManager.bash
 
 # Run it!
-./termux-manager.sh
+./TermuxEnvManager.bash
