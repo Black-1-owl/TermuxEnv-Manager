@@ -5,7 +5,7 @@
 # Professional Termux Environment Backup & Restore
 # Author: @Black-1-owl
 # GitHub: https://github.com/Black-1-owl/TermuxEnv-Manager
-# Created: September 2025
+# Created: April 2025
 # Eeleased: January 2026
 # License: MIT
 # ================================================
